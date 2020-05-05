@@ -1,0 +1,10 @@
+target: "JSON"
+vars:
+  - name: hoge_fuga_value
+    key: .hoge.fuga
+  - name: hoge_foo_value
+    key: .hoge.foo
+template: |
+  { "hoge_fuga": "{{ hoge_fuga_value }}"
+    "hoge_foo": "{{ hoge_foo_value }}"
+  }

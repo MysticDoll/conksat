@@ -1,0 +1,18 @@
+name: conksat 
+version: "1.0"
+author: Mitsuru Takigahira <mysticdoll@mysticdoll.com>
+about: Convert key/value struct to any template 
+args:
+    - config:
+        short: c
+        long: config
+        value_name: FILE
+        help: Sets a custom config file
+        takes_value: true
+        required: true
+    - source:
+        short: s
+        long: source
+        help: Sets the input file to use
+        takes_value: true
+        required: false 
